@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerName {
+  
+    color: #35bfff;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1em;
+    margin-top: 0;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+   
+  
+}
+
+.Left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.Right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+#Img_Pane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+@media only screen and (min-width: 1200px) {
+  .Left {
+    flex: 2;
+  }
+
+  .Right {
+    flex: 6;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Left {
+    display: none;
+  }
+}

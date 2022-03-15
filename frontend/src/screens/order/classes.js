@@ -1,0 +1,227 @@
+import { makeStyles } from '@material-ui/core/styles';
+
+export const useStyles = makeStyles((theme) => ({
+  divroot: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: '1.2rem',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '1rem',
+    },
+  },
+  divroot2: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: '5rem',
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '1rem',
+    },
+  },
+  para1: {
+    fontSize: '1.3rem',
+    lineHeight: '1.37rem',
+    color: '#666',
+    textAlign: 'center',
+    fontWeight: '700',
+    marginBottom: '1rem',
+  },
+  para2: {
+    fontSize: '1.2rem',
+    lineHeight: '1.37rem',
+    color: '#666',
+    textAlign: 'center',
+    fontWeight: '400',
+    marginBottom: '1rem',
+    marginTop: '1rem',
+  },
+  flex1: {
+    display: 'flex',
+    justifyContent: 'center',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+      padding: '1rem',
+    },
+  },
+  spantext: {
+    fontSize: '1rem',
+    fontFamily: '"Lato",sans-serif',
+    lineHeight: '1.37rem',
+    color: '#666',
+    fontWeight: '700',
+    marginBottom: '1rem',
+  },
+  maindiv: {
+    padding: '0.7rem',
+    paddingBottom: 0,
+    border: '1px solid #ccc',
+    borderRadius: '0.5rem',
+  },
+  subdiv1: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#62BB4E',
+    color: '#fff',
+    borderRadius: '0.5rem',
+  },
+  subdiv2: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: '#008EFF',
+    color: '#fff',
+    borderRadius: '0.5rem',
+  },
+  csvImage: {
+    objectFit: 'contain',
+    maxWidth: 150,
+    maxHeight: 150,
+    minWidth: 150,
+    minHeight: 150,
+    padding: '1rem',
+    [theme.breakpoints.only('sm')]: {
+      maxWidth: 200,
+      maxHeight: 200,
+      minWidth: 200,
+      minHeight: 200,
+      padding: '1.5rem',
+    },
+  },
+  box: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  boxpara: {
+    fontSize: '1rem',
+    lineHeight: '1.37rem',
+    color: '#666',
+    fontWeight: '700',
+  },
+  layout: {
+    width: '65%',
+    [theme.breakpoints.down('sm')]: {
+      width: '80%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+  continue: {
+    backgroundColor: '#62BB4E',
+    width: '25%',
+    height: '4rem',
+    marginTop: '1rem',
+    marginBottom: '1rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: '#fff',
+    fontSize: '1.2rem',
+    borderRadius: '5px',
+    '&:hover': {
+      backgroundColor: '#357626',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '50%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+  continue2: {
+    backgroundColor: '#2cca5c',
+    width: '20%',
+    height: '4rem',
+    marginTop: '1rem',
+    marginBottom: '1rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: '#fff',
+    fontSize: '1.2rem',
+    borderRadius: '5px',
+    '&:hover': {
+      backgroundColor: '#3ab961',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '50%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+  divider: {
+    borderBottom: '1px solid #B2BEB5',
+    height: 1,
+    width: '100%',
+  },
+  divider1: {
+    borderBottom: '1px solid #B2BEB5',
+    width: '100%',
+    padding: 0,
+    margin: 0,
+  },
+  spantext2: {
+    fontSize: '1rem',
+    fontFamily: '"Lato",sans-serif',
+    lineHeight: '1.37rem',
+    color: '#222',
+    fontWeight: '400',
+  },
+  spantext3: {
+    fontSize: '1rem',
+    fontFamily: '"Lato",sans-serif',
+    lineHeight: '1.37rem',
+    color: '#000',
+    fontWeight: 'bold',
+  },
+  flex2: {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: '1rem',
+  },
+  box2: {
+    backgroundColor: '#00A3FF',
+    color: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    width: '50%',
+    height: '4rem',
+    fontSize: '1rem',
+    lineHeight: '1.37rem',
+    fontWeight: '400',
+    [theme.breakpoints.down('sm')]: {
+      width: '90%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+  box3: {
+    width: '50%',
+    height: '4rem',
+    fontSize: '1rem',
+    lineHeight: '1.37rem',
+    fontWeight: '400',
+    [theme.breakpoints.down('sm')]: {
+      width: '90%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '90%',
+    },
+  },
+  text: {
+    fontSize: '2rem',
+    fontFamily: '"Lato",sans-serif',
+    lineHeight: '1.37rem',
+    color: '#222',
+    fontWeight: '400',
+    textAlign: 'center',
+  },
+  textbox: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '19rem',
+  },
+}));

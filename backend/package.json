@@ -1,0 +1,45 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server.js",
+    "lint": "eslint \"./src/**/*.js\" app.js  --fix",
+    "serve": "pm2 start ecosystem.config.js"
+  },
+  "author": "pathum kalhan",
+  "license": "ISC",
+  "dependencies": {
+    "@joi/date": "^2.1.0",
+    "@sendgrid/mail": "^7.4.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^10.0.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "mongodb": "^4.3.1",
+    "mongoose": "^5.13.4",
+    "multer": "^1.4.4",
+    "node-cron": "^3.0.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "prompt": "^1.2.0",
+    "randomstring": "^1.2.1",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0",
+    "twilio": "^3.68.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.15"
+  }
+}
