@@ -6,7 +6,7 @@ import {
 } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
-import NavBar from 'components/layouts/NavBar';
+// import NavBar from 'components/layouts/NavBar';
 // import Drawer from './components/layouts/Drawer';
 
 import '../src/index.css';
@@ -23,7 +23,7 @@ import Loader from './components/UI/Loader';
 import purple from '@material-ui/core/colors/purple';
 import AddPickupLocation from 'screens/signup/AddPickupLocation';
 // footer
-import Footer from 'components/layouts/Footer';
+// import Footer from 'components/layouts/Footer';
 
 import Login from 'components/layouts/Login';
 import NotFound from 'components/layouts/PageNotFound';
@@ -77,7 +77,7 @@ function App(props) {
     <ReduxProvider store={store}>
       <ThemeProvider theme={lightTheme}>
         <div className={classes.root}>
-          <NavBar {...props}> </NavBar>
+          {/* <NavBar {...props}> </NavBar> */}
 
           <Suspense
             fallback={
@@ -107,7 +107,7 @@ function App(props) {
                 <Route path='/delivery' element={<Delivery />} />
                 <Route path='/checkout' element={<PlaceOrder />} />
                 <Route path='/order' element={<Order />} />
-                <Route path='/form' element={<Form />} />
+                <Route path='/form' element={<Form1 />} />
                 <Route path='/passwordhelp' element={<ForgotPassword />} />
                 <Route
                   exact
@@ -117,7 +117,7 @@ function App(props) {
               </Routes>
             </Auth>
           </Suspense>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </ThemeProvider>
     </ReduxProvider>
