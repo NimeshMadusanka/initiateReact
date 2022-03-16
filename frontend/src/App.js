@@ -17,8 +17,8 @@ import { Provider as ReduxProvider } from 'react-redux';
 import store from './store/store';
 import Loader from './components/UI/Loader';
 
-import ProtectedRoute from './components/common/ProtectedRoute';
-import { routes } from './routes';
+// import ProtectedRoute from './components/common/ProtectedRoute';
+// import { routes } from './routes';
 
 import purple from '@material-ui/core/colors/purple';
 import AddPickupLocation from 'screens/signup/AddPickupLocation';
@@ -35,7 +35,7 @@ import DateTimePicker from './screens/pickup/Pickup';
 import PlaceOrder from 'screens/placeOrder/PlaceOrder';
 import Delivery from 'screens/delivery/Delivery';
 import Order from './screens/order/Order';
-
+import Form1 from './screens/form/Form1';
 const lightTheme = createMuiTheme({
   palette: {
     type: 'light',
@@ -107,6 +107,7 @@ function App(props) {
                 <Route path='/delivery' element={<Delivery />} />
                 <Route path='/checkout' element={<PlaceOrder />} />
                 <Route path='/order' element={<Order />} />
+                <Route path='/form' element={<Form />} />
                 <Route path='/passwordhelp' element={<ForgotPassword />} />
                 <Route
                   exact

@@ -7,13 +7,10 @@ import {
   Button,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { login } from '../../store/actions/authActions';
-import { connect } from 'react-redux';
 import Alert from '@material-ui/lab/Alert';
 import axios from '../../utils/lib/axios';
 import styles from '../../utils/styles/Login.module.css';
 import { useNavigate } from 'react-router-dom';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 // validation
 import { Formik, Form, Field } from 'formik';
@@ -96,8 +93,6 @@ const useStyles = makeStyles((theme) => ({
       textShadow: 'none',
     },
   },
-
-  fiberIcon: {},
 }));
 
 let initialValues = {
@@ -109,7 +104,8 @@ let SignUpSchema = Yup.object().shape({
   email: Yup.string().email().required('Email is required!'),
   password: Yup.string().required('Password is required!'),
 });
-function Login(props) {
+
+const Form1 = (props) => {
   const classes = useStyles();
 
   const [alert, setAlert] = useState({
@@ -159,7 +155,6 @@ function Login(props) {
       }
     }
   };
-
   return (
     <Grid justifyContent='center' alignItems='center' spacing={1} p={1} mt={10}>
       <div className={styles.Wrapper}>
@@ -216,44 +211,6 @@ function Login(props) {
                             </Grid>
                           </Grid>
                         </CardActions>
-                        <Grid container>
-                          <Grid
-                            container
-                            item
-                            xs={12}
-                            md={6}
-                            className={classes.buttonLeft}
-                          >
-                            <Button
-                              className={classes.btn1}
-                              onClick={() => navigate('/passwordhelp')}
-                            >
-                              I forgot my password
-                            </Button>
-                            <FiberManualRecordIcon
-                              style={{
-                                color: '#D3D3D3',
-                                fontSize: '10px',
-                                marginTop: '0.8rem',
-                              }}
-                            />
-                          </Grid>
-
-                          <Grid
-                            container
-                            item
-                            xs={12}
-                            md={6}
-                            className={classes.buttonRight}
-                          >
-                            <Button
-                              className={classes.btn1}
-                              onClick={() => navigate('/signup')}
-                            >
-                              I need an account
-                            </Button>
-                          </Grid>
-                        </Grid>
                       </Form>
                     );
                   }}
@@ -280,6 +237,6 @@ function Login(props) {
       </div>
     </Grid>
   );
-}
+};
 
-export default connect(null, { login })(Login);
+export default Form1;

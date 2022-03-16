@@ -21,6 +21,7 @@ export default function Pickup() {
   const [value, onChange] = useState('');
   const [selectedValue, setSelectedValue] = useState('a');
   const [getData, setGetData] = useState([]);
+  //eslint-disable-next-line
   const [fData, setFData] = useState([]);
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
